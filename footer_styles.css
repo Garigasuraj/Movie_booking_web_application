@@ -1,4 +1,4 @@
-footer{
+.footer{
     display: flex;
     justify-content: space-around;
     background: linear-gradient(rgb(39, 37, 33),rgb(48, 34, 47));
