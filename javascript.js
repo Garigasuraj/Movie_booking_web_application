@@ -16,7 +16,7 @@ function init(){
         }else{
             if(x.matches){
                 document.getElementById("more_movies").innerHTML = `See All <i class="fa-solid fa-angle-down"></i>`
-                movie_div.style.height = "4600px"
+                movie_div.style.height = "5600px"
                 movie_div.style.overflow = "visible"
             }
             else{
