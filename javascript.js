@@ -6,6 +6,7 @@ const location = document.getElementById("location")
 
 init()
 function init(){
+    var x = window.matchMedia("(max-width: 500px)")
     movie_expand.addEventListener("click",()=>{
         if(movie_div.style.height == "1600px"){
             document.getElementById("more_movies").innerHTML = `See All <i class="fa-solid fa-angle-right"></i>`
@@ -13,9 +14,17 @@ function init(){
             movie_div.style.overflow = "hidden"
             movie_div.style.height = "520px"
         }else{
-            document.getElementById("more_movies").innerHTML = `See All <i class="fa-solid fa-angle-down"></i>`
-            movie_div.style.height = "1600px"
-            movie_div.style.overflow = "visible"
+            if(x.matches){
+                document.getElementById("more_movies").innerHTML = `See All <i class="fa-solid fa-angle-down"></i>`
+                movie_div.style.height = "4600px"
+                movie_div.style.overflow = "visible"
+            }
+            else{
+                document.getElementById("more_movies").innerHTML = `See All <i class="fa-solid fa-angle-down"></i>`
+                movie_div.style.height = "1600px"
+                movie_div.style.overflow = "visible"
+            }
+           
         }
     })
     // slide_image.addEventListener("mouseover",()=>{
@@ -25,6 +34,7 @@ function init(){
     //     slide_image.style.webkitAnimationPlayState = "running"
     // })
     get_data()
+    
 }
 async function get_data(){
     const data  = await fetch("https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2023-03-05&primary_release_date.lte=2023-04-10&api_key=ff19bfe41b529c552ef39e747fc0fc02&language=en-US")

@@ -172,3 +172,15 @@ body{
     color: white;
     width: 600px;
 }
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(rgb(39, 37, 33),rgb(48, 34, 47));
+    color: white;
+    margin: -8px -8px;
+    padding-top: 25px;
+}
+#footer_div1{
+    cursor: pointer;
+    font-size: 21px;
+}
