@@ -27,7 +27,7 @@ function init(){
     get_data()
 }
 async function get_data(){
-    const data  = await fetch("https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2023-03-15&primary_release_date.lte=2023-04-10&api_key=ff19bfe41b529c552ef39e747fc0fc02&language=en-US")
+    const data  = await fetch("https://api.themoviedb.org/3/discover/movie?primary_release_date.gte=2023-03-05&primary_release_date.lte=2023-04-10&api_key=ff19bfe41b529c552ef39e747fc0fc02&language=en-US")
     const response = await data.text()
     const response_string = JSON.parse(response)
     console.log(response_string)
@@ -49,7 +49,7 @@ function render_data(data){
     let html = ""
     for(let i=0; i<15; i++){
         html += `<div id="movie_div">
-        <a href="seating.html"> <div id="movie_list">
+        <a href="Seating.html"> <div id="movie_list">
             <img src=https://image.tmdb.org/t/p/original${data.results[i].poster_path}>
         </div></a>
         <div id="movie_rating">

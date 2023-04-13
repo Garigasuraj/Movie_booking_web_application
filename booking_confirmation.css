@@ -11,7 +11,6 @@ body{
 #outer_div{
     width: 1000px;
     display: flex;
-    /* justify-content: space-between; */
     margin: 50px auto;
     border-radius: 4px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);

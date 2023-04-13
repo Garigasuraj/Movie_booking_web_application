@@ -4,8 +4,6 @@ const time = document.getElementById("movie_timming")
 
 let date = new Date()
 
-console.log(date.getDate()+5,date.getMonth(),date.getFullYear(),date.getDay())
-
 const seat_left = document.getElementById("seating_left")
 const L_seat_row =  document.getElementById("L-row")
 const R_seat_row =  document.getElementById("R-row")
