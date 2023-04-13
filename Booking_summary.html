@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+
+    <link rel="stylesheet" href="Booking_summary.css">
+
+    <script src="https://kit.fontawesome.com/1fe849949f.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sevillana&display=swap" rel="stylesheet">
+
+</head>
+<body style="font-family: Roboto;">
+<div class="img_banner">
+    <img  src="https://assets-in.bmscdn.com/promotions/cms/creatives/1653033328521_855x95.jpg">
+</div>
+
+<div id="summary">
+   <div class="heading ">BOOKING SUMMARY</div>
+
+   <div class="seat_outer">
+    <div id="seat_number">
+        GOLD C-R - L15, L16 (2 Tickets)
+        <div>SCREEN 1</div>
+    </div>
+        <div id="main_ticket_price">RS. 400.00</div>
+   </div>
+
+   <div class="tax_outer" style="margin-bottom: 5px;">
+    <div>Convenience fees</div>
+    <div id="tax">Rs.59.00</div>
+   </div>
+
+   <div class="base_outer">
+    <div>Base Amount</div>
+    <div id="base_price">Rs.59.00</div>
+   </div>
+   <div class="base_outer" style="margin-bottom: 18px;">
+    <div>Integrated GST (IGST) @ 18%</div>
+    <div id="gst_price">Rs.59.00</div>
+   </div>
+
+   <div class="line"></div>
+
+   <div class="final_div">
+    <div >Amount Payable </div>
+    <div id="final_price"><div>RS. 461.03</div></div>
+   </div>
+</div>
+<!-----------------------------END OF THE PART_1---------------------------------->
+<div class="ticket_type">SELECT TICKET TYPE</div>
+
+<div class="container"> 
+    <div>
+        <div id="ticket_collect">
+            <div><input id="ticket_type" name="ticket" type="radio"> M-Ticket</div>
+            <div><input id="ticket_type" name="ticket" type="radio"> Box Office Pickup</div>    
+        </div>
+    </div>
+
+    <div class="ticket_info">Show the m-ticket QR Code on your mobile to enter the cinema.</div>
+
+    <!-- <div class="ticket_info">Select this option to pick your tickets from Box Office.</div> -->
+    <div id="final_div" style="margin-top: 35px;">
+        <div class="payment_info"><i class="fa-solid fa-info"></i>By proceeding, I express my consent to complete this transaction.</div>
+        <a style="text-decoration: none;" href="Booking_confirmation.html"><div class="proceed">Proceed</div></a>
+    </div>
+</div>
+<div class="last_div">
+    You can cancel the tickets 20 min(s) before the show. Refunds will be done according to <span style="color: red; cursor: pointer;">Cancellation Policy</span>
+</div>
+
+<script type="module" src="Booking_summary.js"></script>
+
+</body>
+</html>

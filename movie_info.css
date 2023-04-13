@@ -1,0 +1,107 @@
+body{
+    height: 2000px;
+    font-family: Roboto;
+}
+.movie_info_background{
+    width: 1538px;
+    height: 500px;
+    margin-left: -8px;
+    filter: blur(1px);
+    position: relative;
+    z-index: 1;
+}
+.movie_image{
+    width: 280px;
+    position: absolute;
+    z-index: 2;
+    bottom: 240px;
+    left: 140px;
+}
+#like_symbol{
+    color: green;
+}
+.movie_details{
+    left: 460px;
+    top:100px;
+    height: 600px;
+    width: 400px;
+    
+    position:absolute;
+    top: 210px;
+    z-index: 2;
+    font-family: Roboto;
+    color: white;
+}
+.title{
+    
+    top: 150px;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.releasing_date{
+    margin-top: 15px;
+    border:1px solid white;
+    width:370px;
+    height: 60px;
+    position:absolute;
+    font-family: Roboto;
+    color: white;
+    border-radius: 4px;
+    
+
+    font-size: 22px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 0px 15px
+    
+}
+.new_line{
+    font-size: 12px;
+    display: flex;
+    
+}
+.lang span{
+    height: 22px;
+    margin-top: 30px;
+    position: absolute;
+    /* border: 1px solid black; */
+    width: 30px;
+    color: black;
+    border-radius: 4px;
+    font-size: 15px;
+    top: 125px;
+    text-align: center;
+    padding-top: 3px;
+    background-color: white;
+}
+.type{
+    margin-top: 125px;
+    top: 145px;
+    font-size: 17px;
+}
+.choice{
+    /* margin-top: 15px; */
+    width:100px;
+    height:25px;
+    border:none;
+    background-color: white;
+}
+#book_tickets{
+    margin-top: 45px;
+    border: 1px solid brown;
+    width: 200px;
+    height: 35px;
+    background-color: brown;
+    color:white;
+    border-color:brown;
+    font-size:14px;
+    cursor:pointer;
+    transition: background-color 0.4s, color 0.4s;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
+    border-radius: 5px;
+}
+#book_tickets:hover{
+    color: brown;
+    background-color:white;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+
+    <script src="https://kit.fontawesome.com/1fe849949f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="booking_confirmation.css">
+    
+</head>
+<body>
+    <div id="nav_bar">
+        <div class="right_nav">
+        <a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdPduztSegdevsGcd-AAgyTOuDBW3Xurnqhg&usqp=CAU"></a>
+            <input type="text" id="seach_movie" placeholder="Search for movies">
+        </div>
+        <div class="right_nav">
+            <div><input type="button" value="Sign in" id="sign_in_button"></div>
+        </div>
+    </div>
+    <div class="conformation_title">Booking Confirmed</div>
+    <div id="outer_div">
+        <div id="image">
+            <img src="https://images.unsplash.com/photo-1566275529824-cca6d008f3da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGhvdG98ZW58MHx8MHx8&w=1000&q=80">
+        </div>
+        <div id="booking_info">
+            <div id="moviename">Ravanasura</div>
+            <div id="time">PVR: Maddox, Warangal 01.30pm | 09-march-2023</div>
+            <div id="quantity">Quantity: 5</div>
+            <div><i class="fa-solid fa-couch"></i><b id="seat_num">CLASSIC - G-16,G-17</b></div>
+
+            <div id="ticket_price">
+                <div>Ticket price</div>
+                <div id="price">RS. 500.00</div>
+            </div>
+            <div id="tax">
+                <div>Convenience fees<div class="taxt_info">Incl. of Tax</div></div>
+                <div id="tax_price">RS. 68.08</div>
+            </div>
+            <hr>
+
+            <div id="final_price">
+                <div>AMOUNT PAID</div>
+                <div id="f_price">Rs. 563.36</div>
+            </div>
+        </div>
+        
+        <div class="vr"> </div>
+        <div id="qr">
+            <div id="qr_generator"></div>
+            <hr>
+            <div style="text-align: center;">BOOKING ID</div>
+            <div id="qr_code">WJG99B9</div>
+        </div>
+    </div>
+
+    <a style="text-decoration: none;" href="/index.html"><div id="another_ticket">Book Another ticket</div></a>
+    <script src="booking_confirmation.js"></script>
+</body>
+</html>
