@@ -19,7 +19,7 @@ MOVIE BOOKING WEB APPLICATION:
 
 ![Screenshot (290)](https://user-images.githubusercontent.com/104826351/232102494-825d813c-3c97-492d-9024-dba92fee8974.png)
 
-==> Maximum 7 tickets can be booked at once.
+==> Maximum 7 tickets can be booked at once. Seat will be get selected by single click and deselected by double click.
 
 ![Screenshot (291)](https://user-images.githubusercontent.com/104826351/232106073-9aa61326-7a76-427c-9e46-81b1174c212a.png)
 
