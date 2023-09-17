@@ -57,7 +57,7 @@ async function get_data(){
 
 function render_data(data){
     let html = ""
-    for(let i=0; i<15; i++){
+    for(let i=0; i<12; i++){
         html += `<div id="movie_div">
         <a href="Seating.html"> <div id="movie_list">
             <img src=https://image.tmdb.org/t/p/original${data.results[i].poster_path}>
