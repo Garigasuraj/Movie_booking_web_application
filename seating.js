@@ -37,7 +37,7 @@ function seat_book_and_price_update(){
             const event =  new Event("custom_event")
             seat[b].dispatchEvent(event)
             
-            if(seat[b].style.color == "white" &&  seat[i].style.background != "grey"){
+            if(seat[b].style.color == "white" &&  seat[b].style.background != "grey"){
                 value -= (b+1*200)-b
                 // for css styles
                 seat[b].style.background = "white"
