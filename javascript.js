@@ -12,7 +12,7 @@ function init(){
             document.getElementById("more_movies").innerHTML = `See All <i class="fa-solid fa-angle-right"></i>`
             
             movie_div.style.overflow = "hidden"
-            movie_div.style.height = "520px"
+            movie_div.style.height = "580px"
         }else{
             if(x.matches){
                 document.getElementById("more_movies").innerHTML = `See All <i class="fa-solid fa-angle-down"></i>`
